@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Test</title>
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body style="display: flex; flex-direction: column;">
+<div id="app">
+</div>
+</body>
+<script>
+    axios.get("https://location.mingmingt.xyz/test",
+        {timeout: 1000}).then(function (response) {
+        console.log("then")
+    }).catch(function (exc) {
+        console.log("exc:")
+        console.log(exc)
+    })
+</script>
+</html>
