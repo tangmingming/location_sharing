@@ -21,6 +21,6 @@ from main import views as main_viwews
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r"^location$", main_viwews.Location.as_view()),
-  url(r"^test$", main_viwews.Test.as_view()),
+  url(r"^location/test$", main_viwews.Test.as_view()),
 
 ]
